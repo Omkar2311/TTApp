@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgBackButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/left_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="8dp"
+        android:layout_margin="8dp"/>
+
+    <ImageView
+        android:id="@+id/imgScanner"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/scanner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imgBackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgScanner"
+        android:background="@color/lightgrey"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:textCursorDrawable="@null"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
